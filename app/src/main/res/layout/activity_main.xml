@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dimasfauzi.tp2.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih Menu"
+            android:textAlignment="center"/>
+        <RadioGroup
+            android:id="@+id/menu_diner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center">
+            <RadioButton
+                android:id="@+id/radio_dinein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dine In"/>
+            <RadioButton
+                android:id="@+id/radio_takewaway"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Take Away"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/pesan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesan Sekarang"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
